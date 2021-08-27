@@ -1,21 +1,22 @@
 #include <stdio.h>
 
 /**
- * main - Executed and Prints single digit base 10 starting from 0.
+ * main - Executed first by program. Print alphabets in reverse.
  *
  * Return: Always 0.
  */
 
 int main(void)
 {
-	int n;
+	char alpha;
 
-	for (n = 0; n < 10; n++)
+	for (alpha = 'z'; alpha >= 'a'; alpha--)
 	{
-		printf("%d", n);
+		putchar(alpha);
 	}
 
-	printf("\n");
+	putchar('\n');
 
 	return (0);
 }
+
