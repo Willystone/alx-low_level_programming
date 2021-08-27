@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-
-/* main - Executes first 
- * Returns - Always 0
+/* main - Executes first in the program. 
+ *
+ * Returns: Always 0.
  * */
 int main(void)
 {
