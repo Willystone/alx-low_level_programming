@@ -1,15 +1,19 @@
 #include <stdio.h>
+
 /**
- * main - print if the number is postive, zero, or negative.
- * Return: Always 0
+ * main - Executed first in program. Prints single digit base 10 numbers.
+ *
+ * Return: Always 0.
  */
+
 int main(void)
 {
-char b;
-for (b = '0'; b <= '10'; b++)
-{
-	putchar(b);
-}
-printf('\n');
-return (0);
+	int n;
+
+	for (n = 0; n < 10; n++)
+		putchar((n % 10) + '0');
+
+	putchar('\n');
+
+	return (0);
 }
