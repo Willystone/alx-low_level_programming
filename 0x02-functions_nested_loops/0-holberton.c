@@ -1,8 +1,7 @@
 
-#include "holberton.h"
 #include "main.h"
 /**
- * main - function to print prints out "Holberton.
+ * main - function to print prints out "Holberton"
  *
  * Return: 0
  */
