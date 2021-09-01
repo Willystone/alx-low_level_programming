@@ -1,6 +1,6 @@
 
 #include "holberton.h"
-
+#include "main.h"
 /**
  * main - function to print
  *
