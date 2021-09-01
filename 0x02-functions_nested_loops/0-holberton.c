@@ -2,7 +2,7 @@
 #include "holberton.h"
 #include "main.h"
 /**
- * main - function to print
+ * main - function to print prints out "Holberton.
  *
  * Return: 0
  */
