@@ -1,18 +1,15 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
- * _isupper - Checks for uppercase characters.
- *
- * @c: The integer argument passed to function.
- *
- * Return: 1 when character is upper and 0 when otherwise.
+ * _isupper - function that checks for uppercase character.
+ * @c: the int for the paramaters of my function
+ * Return: 0
  */
 int _isupper(int c)
 {
-	if ((c >= 'A') && (c <= 'Z'))
-		return (1);
-	else if ((c >= 'a') && (c <= 'z'))
-		return (0);
+	if (c >= 65 && c <= 90)
+	{
+	return (1);
+	}
 	else
-		return (0);
+	return (0);
 }
