@@ -6,12 +6,7 @@
  * @a: First pointer argument.
  * @b: Second pointer argument.
  */
-
-	   
-
-		char *
-           strncat(char *dest, const char *src, size_t n)
-
+char *_strcat(char *dest, char *src)
            {
                size_t dest_len = strlen(dest);
                size_t i;
