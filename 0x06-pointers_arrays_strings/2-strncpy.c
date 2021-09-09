@@ -1,24 +1,30 @@
 #include "main.h"
 
 /**
- * _strcmp - compares two strings.
+ * _strncpy - Copies a string.
  *
- * @s1: First string.
- * @s2: Second string.
+ * @dest: String pointer to be copied to.
  *
- * Return: Difference of the two strings, 0 if they're equal.
+ * @src: String pointer to be copied.
+ *
+ * @n: Number of bytes to be appended from src.
+ *
+ * Return: dest pointer.
  */
 
-int _strcmp(char *s1, char *s2)
+char *_strncpy(char *dest, char *src, int n)
 {
-	while (*s1 == *s2)
+	int i;
+
+	for (i = 0; i < n && *(src + i) != '\0'; i++)
 	{
-		if (*s1 == '\0')
-		{
-			return (0);
-		}
-		s1++;
-		s2++;
+		*(dest + i) = *(src + i);
 	}
-	return (*s1 - *s2);
+	for ( ; i < n; i++)
+	{
+		*(dest + i) = '\0';
+	}
+
+	return (dest);
 }
+
