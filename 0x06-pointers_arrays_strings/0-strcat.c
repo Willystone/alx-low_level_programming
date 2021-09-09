@@ -1,19 +1,27 @@
 #include "main.h"
 
 /**
- * swap_int - Swaps the value of two integers.
+ * _strcat - Concatenates two strings.
  *
- * @a: First pointer argument.
- * @b: Second pointer argument.
+ * @dest: Pointer to destination string.
+ * @src: Pointer to source string.
+ *
+ * Return: Pointer to resulting string dest.
  */
 char *_strcat(char *dest, char *src)
-           {
-               size_t dest_len = strlen(dest);
-               size_t i;
+{
+	int index = 0;
+	/* Have variable for index in array initialized to 0*/
 
-               for (i = 0 ; i < n && src[i] != '\0' ; i++)
-                   dest[dest_len + i] = src[i];
-               dest[dest_len + i] = '\0';
-
-               return dest;
-           }
+	while (*(dest + index))
+	{
+		index++;
+	}
+	while (*(src))
+	{
+		*(dest + index) = *(src);
+		index++;
+		src++;
+	}
+	return (dest);
+}
