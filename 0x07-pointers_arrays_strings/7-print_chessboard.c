@@ -1,22 +1,20 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * print_chessboard - Prints the chessboard.
  *
- * Return: Always 0.
+ * @a: Pointer for chessboard to be printed.
  */
-void print_chessboard(char (*a)[8]);
+void print_chessboard(char (*a)[8])
 {
-    char board[8][8] = {
-        {'r', 'k', 'b', 'q', 'k', 'b', 'k', 'r'},
-        {'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},
-        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-        {'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
-        {'R', 'K', 'B', 'Q', 'K', 'B', 'K', 'R'},
-    };
-    print_chessboard(board);
-    return (0);
+	int row, col;
+
+	for (row = 0; a[row][7]; row++)
+	{
+		for (col = 0; col < 8; col++)
+		{
+			_putchar(a[row][col]);
+		}
+		_putchar('\n');
+	}
 }
