@@ -1,3 +1,4 @@
-# Bit manipulation
+# 0x14. C - Bit manipulation
 
-Bit manipulation is the act of algorithmically manipulating bits or other pieces of data shorter than a byte.
+- Look for the right source of information without too much help
+- How to manipulate bits and use bitwise operators
